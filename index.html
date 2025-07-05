@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria's Baking Stories | Artisan Bakery & Patisserie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>Maria's Baking Stories</h1>
+                <span class="tagline">Bakery • Patisserie • Cafe</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#bookings">Bookings</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Handcrafted with Love</h2>
+            <p>Artisan baked goods, exquisite pastries, and delightful treats made fresh daily</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary">View Products</a>
+                <a href="#bookings" class="btn btn-secondary">Book a Table</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Artisan Bakery Display">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Maria</h2>
+                    <p>Welcome to Maria's Baking Stories, where every creation tells a story of passion, tradition, and artistry. With over 15 years of experience in the culinary world, I specialize in creating handcrafted pastries, custom cakes, and delightful treats that bring joy to every occasion.</p>
+                    <p>From traditional recipes passed down through generations to modern twists on classic favorites, each item is made with the finest ingredients and meticulous attention to detail.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Happy Customers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Unique Recipes</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1594736797933-d0af501ba2fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Maria in the kitchen">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            
+            <!-- Product Categories -->
+            <div class="product-categories">
+                <button class="category-btn active" data-category="all">All Products</button>
+                <button class="category-btn" data-category="macarons">Macarons</button>
+                <button class="category-btn" data-category="truffles">Truffles</button>
+                <button class="category-btn" data-category="patisserie">Patisserie</button>
+                <button class="category-btn" data-category="cookies">Cookies</button>
+                <button class="category-btn" data-category="specialty">Specialty</button>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid">
+                <!-- Macarons -->
+                <div class="product-card" data-category="macarons">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1569864358642-9d1684040f43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Assorted Macarons">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pistachio Macaron</h3>
+                        <p>Delicate almond shells filled with rich pistachio ganache</p>
+                        <div class="product-price">£1.80</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="macarons">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Limoncello Macarons">
+                    </div>
+                    <div class="product-info">
+                        <h3>Limoncello Macaron</h3>
+                        <p>Bright citrus shells with Italian limoncello buttercream</p>
+                        <div class="product-price">£1.80</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="macarons">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Ferrero Rocher Macarons">
+                    </div>
+                    <div class="product-info">
+                        <h3>Ferrero Rocher Macaron</h3>
+                        <p>Chocolate hazelnut shells with creamy Nutella filling</p>
+                        <div class="product-price">£1.80</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Truffles -->
+                <div class="product-card" data-category="truffles">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1549007953-2f2dc0b24019?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Chocolate Truffles">
+                    </div>
+                    <div class="product-info">
+                        <h3>Red Velvet Truffle</h3>
+                        <p>Smooth red velvet ganache coated in rich dark chocolate</p>
+                        <div class="product-price">£1.60</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="truffles">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Biscoff Truffles">
+                    </div>
+                    <div class="product-info">
+                        <h3>Biscoff Truffle</h3>
+                        <p>Creamy Biscoff center with a hint of cinnamon spice</p>
+                        <div class="product-price">£1.60</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="truffles">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Oreo Truffles">
+                    </div>
+                    <div class="product-info">
+                        <h3>Oreo Truffle</h3>
+                        <p>Crushed Oreo cookies in white chocolate ganache</p>
+                        <div class="product-price">£1.60</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Patisserie -->
+                <div class="product-card" data-category="patisserie">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Victoria Sponge">
+                    </div>
+                    <div class="product-info">
+                        <h3>Victoria Sponge Slice</h3>
+                        <p>Classic British sponge with fresh cream and strawberry jam</p>
+                        <div class="product-price">£5.50</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="patisserie">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Choux Pastry">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pistachio Choux Bun</h3>
+                        <p>Light choux pastry filled with pistachio cream</p>
+                        <div class="product-price">£5.00</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Cookies -->
+                <div class="product-card" data-category="cookies">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Stuffed Cookies">
+                    </div>
+                    <div class="product-info">
+                        <h3>Nutella Stuffed Cookie</h3>
+                        <p>Soft chocolate chip cookie with molten Nutella center</p>
+                        <div class="product-price">£4.50</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cookies">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1548365328-8c6db3220e4c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Kinder Bueno Cookie">
+                    </div>
+                    <div class="product-info">
+                        <h3>Kinder Bueno Stuffed Cookie</h3>
+                        <p>Hazelnut cookie with Kinder Bueno chocolate filling</p>
+                        <div class="product-price">£4.50</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Specialty -->
+                <div class="product-card" data-category="specialty">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1571115764595-644a1f56a55c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Baklava">
+                    </div>
+                    <div class="product-info">
+                        <h3>Traditional Baklava</h3>
+                        <p>Flaky phyllo pastry with honey, nuts, and aromatic spices</p>
+                        <div class="product-price">£4.50</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="specialty">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Dubai Chocolate">
+                    </div>
+                    <div class="product-info">
+                        <h3>Dubai Chocolate Bar</h3>
+                        <p>Luxurious chocolate bar with pistachios and kunafa</p>
+                        <div class="product-price">£27.00</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2 class="section-title">Customer Reviews</h2>
+            <div class="reviews-header">
+                <div class="rating-summary">
+                    <span class="rating-number">4.9</span>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="review-count">293 Reviews</span>
+                </div>
+                <div class="google-reviews">
+                    <span>Powered by <strong>Google</strong></span>
+                </div>
+            </div>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h4>Amanda Gordon</h4>
+                            <span class="review-date">June 15, 2024</span>
+                        </div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p>Very happy place, really nice friendly staff. Thank you so much for the cake and milkshake. The cake was absolutely tasty and soft. It comes in a very large slice...</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h4>Ffyona Cameron</h4>
+                            <span class="review-date">June 15, 2024</span>
+                        </div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p>Popped in on passing. Fantastic!! Definitely be back. The best Victoria slice I've ever had from any Cafe!</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h4>Sharon Lawrie</h4>
+                            <span class="review-date">June 11, 2024</span>
+                        </div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p>Stopped for a morning coffee and croissant this little pink cafe is just a delight! I could not leave without purchasing the amazing cakes on offer...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bookings Section -->
+    <section id="bookings" class="bookings">
+        <div class="container">
+            <h2 class="section-title">Bookings</h2>
+            <div class="booking-options">
+                <div class="booking-card">
+                    <h3>Book a Table</h3>
+                    <p>Reserve your spot for a delightful dining experience in our cozy cafe</p>
+                    <button class="btn btn-primary">Book Now</button>
+                </div>
+                <div class="booking-card featured">
+                    <h3>Afternoon Tea</h3>
+                    <p>Enjoy a traditional afternoon tea experience with our finest pastries and teas</p>
+                    <div class="price">£22.00 per person</div>
+                    <small>Minimum 2 people</small>
+                    <button class="btn btn-primary">Book Afternoon Tea</button>
+                </div>
+                <div class="booking-card">
+                    <h3>Kids Afternoon Tea</h3>
+                    <p>A special afternoon tea designed for our younger guests</p>
+                    <div class="price">£10.00 per child</div>
+                    <button class="btn btn-primary">Book Kids Tea</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>25 New Row, Dunfermline<br>Fife, Scotland</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>07481 104516</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@mariasbakingstories.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Opening Hours</h4>
+                            <p>Mon-Fri: 8:00 AM - 6:00 PM<br>
+                               Sat-Sun: 9:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Maria's Baking Stories</h3>
+                    <p>Handcrafted with love, served with passion. Creating sweet memories one bite at a time.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#bookings">Bookings</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#products">Macarons</a></li>
+                        <li><a href="#products">Truffles</a></li>
+                        <li><a href="#products">Patisserie</a></li>
+                        <li><a href="#products">Cookies</a></li>
+                        <li><a href="#products">Specialty Items</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 25 New Row, Dunfermline, Fife</p>
+                    <p><i class="fas fa-phone"></i> 07481 104516</p>
+                    <p><i class="fas fa-envelope"></i> hello@mariasbakingstories.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Maria's Baking Stories. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
